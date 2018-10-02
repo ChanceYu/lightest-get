@@ -1,0 +1,5 @@
+index.test.js
+node_modules
+.gitignore
+.npmignore
+.travis.yml
