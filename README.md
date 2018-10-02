@@ -1,4 +1,4 @@
-# lightest get
+# lst-get
 
 [![NPM][img-npm]][url-npm]
 
@@ -11,7 +11,7 @@ The lightest package to get object value in the world. Less than **0.3K** size a
 
 ## Install
 ```bash
-npm install lightest-get --save
+npm install lst-get --save
 ```
 
 ## Usage
@@ -35,11 +35,13 @@ var obj = {
   }
 }
 
-// before，bad code without `lightest-get`
+
+// before，bad code without `lst-get`
 var value = obj.a && obj.a.b && obj.a.b[0] && obj.a.b[0].c
 
+
 // after, nice code
-var get = require('lightest-get')
+var get = require('lst-get')
 
 get(obj, 'a.b[0].c') //=> 'foo'
 get(obj, 'a.b[0].c.e', 'defaultValue') //=> 'defaultValue'
@@ -61,13 +63,13 @@ get(obj, 'a.f2().d') //=> 'fn-bar'
 [![license][img-mit]][url-mit]
 
 
-[url-github]: https://github.com/ChanceYu/lightest-get
-[url-npm]: https://www.npmjs.com/package/lightest-get
-[url-travis]: https://travis-ci.org/ChanceYu/lightest-get
+[url-github]: https://github.com/ChanceYu/lst-get
+[url-npm]: https://www.npmjs.com/package/lst-get
+[url-travis]: https://travis-ci.org/ChanceYu/lst-get
 [url-mit]: https://opensource.org/licenses/mit-license.php
 
-[img-npm]: https://nodei.co/npm/lightest-get.png?compact=true
-[img-travis]: https://travis-ci.org/ChanceYu/lightest-get.svg?branch=master
+[img-npm]: https://nodei.co/npm/lst-get.png?compact=true
+[img-travis]: https://travis-ci.org/ChanceYu/lst-get.svg?branch=master
 [img-javascript]: https://img.shields.io/badge/language-JavaScript-brightgreen.svg
 [img-mit]: https://img.shields.io/badge/license-MIT-blue.svg
-[img-npm-min]: https://img.shields.io/bundlephobia/min/lightest-get.svg
+[img-npm-min]: https://img.shields.io/bundlephobia/min/lst-get.svg
