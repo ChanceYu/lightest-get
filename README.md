@@ -10,7 +10,7 @@
 Maybe the lightest package to get object value in the world. Less than **0.3K** size after compression.
 
 ## Feature
-- Light and easy
+- Light and easy
 - Execute function, like `lstGet(obj, 'a.f()')`
 - You can use default value, when the result is undefined
 
