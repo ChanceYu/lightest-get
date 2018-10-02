@@ -9,22 +9,22 @@
 
 [English](./README.md) | [中文](./README-zh.md)
 
-Maybe the lightest package to access nested property values at any depth in the world. Less than **0.3K** size after compression.
+可能是世界上最轻量的获取对象值的包，不管你的嵌套有多深。压缩之后小于 **0.3K**。
 
-## Feature
-- Light and easy
-- Access nested property values at any depth
-- Execute function, like `lstGet(obj, 'a.f()')`
-- You can use default value, when the result is undefined
+## 特点
+- 轻量简单
+- 获取任意深层次嵌套值
+- 可执行函数, 形如 `lstGet(obj, 'a.f()')`
+- 当没有值的时候，可以设置默认值
 
-## Install
+## 安装
 ```bash
 npm install lst-get --save
 ```
 
-## Usage
+## 使用
 ```javascript
-// the object
+// 对象
 var obj = {
   a: {
     b: [
@@ -44,11 +44,11 @@ var obj = {
 }
 
 
-// before，bad code with long logical expressions
+// 未使用之前，糟糕的代码，又深又长的逻辑判断
 var value = obj.a && obj.a.b && obj.a.b[0] && obj.a.b[0].c
 
 
-// now, nice code
+// 现在，更简洁好用
 var lstGet = require('lst-get')
 
 lstGet(obj, 'a.b[0].c') //=> 'foo'
@@ -58,16 +58,16 @@ lstGet(obj, 'a.f2().d') //=> 'fn-bar'
 ```
 
 
-## Arguments
+## 参数
 ### (object, expression, defaultValue)
 
-| Param | Type | Required | Description |
+| 参数 | 类型 | 必填 | 描述 |
 | --- | --- | --- | --- |
-| object | `object` | `true` | the input object |
-| expression | `string` | `true` | the property accessor expression to get object value |
-| defaultValue | `*` | `false`| the default value, if `[object].[expression]` is undefined |
+| object | `object` | `true` | 对象 |
+| expression | `string` | `true` | 表达式 |
+| defaultValue | `*` | `false`| 默认值，当没有返回值时使用默认值 |
 
-## License
+## 协议
 
 [![license][img-mit]][url-mit]
 
