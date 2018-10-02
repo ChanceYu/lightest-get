@@ -1,6 +1,6 @@
 {
   "name": "lightest-get",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The lightest package to get object value in the world",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,13 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^5.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ChanceYu/lightest-get.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChanceYu/lightest-get/issues"
+  },
+  "homepage": "https://github.com/ChanceYu/lightest-get#readme"
 }
