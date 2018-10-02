@@ -6,7 +6,7 @@
 [![Language][img-javascript]][url-github]
 [![License][img-mit]][url-mit]
 
-The lightest way to get object value in the world. Less than **0.26K** size after compression.
+The lightest package to get object value in the world. Less than **0.26K** size after compression.
 
 ## Usage
 ```javascript
