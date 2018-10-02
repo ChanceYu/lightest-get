@@ -1,6 +1,6 @@
 {
   "name": "lightest-get",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The lightest package to get object value in the world",
   "main": "index.js",
   "scripts": {

@@ -5,8 +5,9 @@
 [![Build Status][img-travis]][url-travis]
 [![Language][img-javascript]][url-github]
 [![License][img-mit]][url-mit]
+![Size][img-npm-min]
 
-The lightest package to get object value in the world. Less than **0.26K** size after compression.
+The lightest package to get object value in the world. Less than **0.3K** size after compression.
 
 ## Install
 ```bash
@@ -69,3 +70,4 @@ get(obj, 'a.f2().d') //=> 'fn-bar'
 [img-travis]: https://travis-ci.org/ChanceYu/lightest-get.svg?branch=master
 [img-javascript]: https://img.shields.io/badge/language-JavaScript-brightgreen.svg
 [img-mit]: https://img.shields.io/badge/license-MIT-blue.svg
+[img-npm-min]: https://img.shields.io/bundlephobia/min/lightest-get.svg
