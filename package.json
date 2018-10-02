@@ -1,7 +1,7 @@
 {
   "name": "lst-get",
-  "version": "1.0.0",
-  "description": "The lightest package to get object value in the world",
+  "version": "1.1.0",
+  "description": "Maybe the lightest package to get object value in the world",
   "main": "index.js",
   "scripts": {
     "test": "mocha index.test.js"

@@ -7,7 +7,12 @@
 [![License][img-mit]][url-mit]
 ![Size][img-npm-min]
 
-The lightest package to get object value in the world. Less than **0.3K** size after compression.
+Maybe the lightest package to get object value in the world. Less than **0.3K** size after compression.
+
+## Feature
+- Light and easy
+- Execute function, like `lstGet(obj, 'a.f()')`
+- You can use default value, when the result is undefined
 
 ## Install
 ```bash
@@ -41,13 +46,15 @@ var value = obj.a && obj.a.b && obj.a.b[0] && obj.a.b[0].c
 
 
 // after, nice code
-var get = require('lst-get')
+var lstGet = require('lst-get')
 
-get(obj, 'a.b[0].c') //=> 'foo'
-get(obj, 'a.b[0].c.e', 'defaultValue') //=> 'defaultValue'
-get(obj, 'a.f()') //=> 'fn-foo'
-get(obj, 'a.f2().d') //=> 'fn-bar'
+lstGet(obj, 'a.b[0].c') //=> 'foo'
+lstGet(obj, 'a.b[0].c.e', 'defaultValue') //=> 'defaultValue'
+lstGet(obj, 'a.f()') //=> 'fn-foo'
+lstGet(obj, 'a.f2().d') //=> 'fn-bar'
 ```
+
+Strong execute function, like `lstGet(obj, 'a.f()')`, see above.
 
 ## Arguments
 ### (object, expression, defaultValue)
