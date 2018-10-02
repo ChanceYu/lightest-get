@@ -7,10 +7,11 @@
 [![License][img-mit]][url-mit]
 ![Size][img-npm-min]
 
-Maybe the lightest package to get object value in the world. Less than **0.3K** size after compression.
+Maybe the lightest package to access nested property values at any depth in the world. Less than **0.3K** size after compression.
 
 ## Feature
 - Light and easy
+- Access nested property values at any depth
 - Execute function, like `lstGet(obj, 'a.f()')`
 - You can use default value, when the result is undefined
 
@@ -41,7 +42,7 @@ var obj = {
 }
 
 
-// before，bad code without `lst-get`
+// before，bad code with long logical expressions
 var value = obj.a && obj.a.b && obj.a.b[0] && obj.a.b[0].c
 
 
@@ -54,16 +55,15 @@ lstGet(obj, 'a.f()') //=> 'fn-foo'
 lstGet(obj, 'a.f2().d') //=> 'fn-bar'
 ```
 
-Strong execute function, like `lstGet(obj, 'a.f()')`, see above.
 
 ## Arguments
 ### (object, expression, defaultValue)
 
-| Param | Type | Default | Required | Description |
-| --- | --- | --- | --- | --- |
-| object | `object` |  | `true` | the input object |
-| expression | `string` |  | `true` | the property accessor expression to get object value |
-| defaultValue | `*` |  | `false`| the default value, if `[object].[expression]` is undefined |
+| Param | Type | Required | Description |
+| --- | --- | --- | --- |
+| object | `object` | `true` | the input object |
+| expression | `string` | `true` | the property accessor expression to get object value |
+| defaultValue | `*` | `false`| the default value, if `[object].[expression]` is undefined |
 
 ## License
 

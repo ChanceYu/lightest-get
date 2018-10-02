@@ -1,5 +1,5 @@
 /**
- * lightest way to get object value
+ * lightest package to get object value
  * @param {object} obj, the input object
  * @param {string} exp, the property accessor expression to get object value
  * @param {*} def, the default value, if [object].[expression] is undefined
