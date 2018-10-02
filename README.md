@@ -8,6 +8,11 @@
 
 The lightest package to get object value in the world. Less than **0.26K** size after compression.
 
+## Install
+```bash
+npm install lightest-get --save
+```
+
 ## Usage
 ```javascript
 // the object
